@@ -1,0 +1,15 @@
+test_vars:
+  number: 1
+  string: "1"
+  number_var: "{{number_var}}"
+  stirng_var: "{{string_var}}"
+  number_float_var: "{{number_float_var}}"
+  stirng_float_var: "{{string_float_var}}"
+  wrong_type_0: "{{number_float_var|int}}"
+  wrong_type_1: "{{number_float_var1}}"
+  wrong_type_2: "{{number_var/10}}"
+  wrong_type_3: "{{number_var//10}}"
+  wrong_type_4: "{{number_var*10}}"
+  wrong_type_5: "{{number_var+10}}"
+  wrong_type_6: "{{number_var-10}}"
+  undef_1: "{{undef_var|d(11)}}"
