@@ -12,4 +12,7 @@ test_vars:
   wrong_type_4: "{{number_var*10}}"
   wrong_type_5: "{{number_var+10}}"
   wrong_type_6: "{{number_var-10}}"
+  wrong_type_7: "{{(number_var/10)|string}}"
+  wrong_type_8: "{{(number_var/10)|float}}"
+  wrong_type_9: "{{(number_var/10)|int}}"
   undef_1: "{{undef_var|d(11)}}"
